@@ -15,13 +15,13 @@ For game console, e.g. PSW, Nintendo Switch Online, you may want to make some ex
 
 ## Usage
 
-* First, you need to have OpenWrt installed on your router, also you need sufficient free space.
-  (Better OpenWrt/LEDE 18.06 or later. Check availability [here]([https://openwrt.org/toh/views/toh_fwdownload?dataflt%5B0%5D=supported%20current%20rel_%3D19.07.3](https://openwrt.org/toh/views/toh_fwdownload?dataflt[0]=supported current rel_%3D19.07.3)). )
-* Install AdGuard Home, ChinaDNS-NG, SmartDNS, and their LuCI.
+* First, you need to have OpenWrt installed on your router, also you need sufficient free space.  
+  (Better OpenWrt/LEDE 18.06 or later. Check availability [here](https://openwrt.org/toh/views/toh_fwdownload)).
+* Install AdGuard Home, ChinaDNS-NG, SmartDNS, and their LuCI.  
   (Better to integrate them into your compiled OpenWrt firmware.)
 * Download this repository, pick configuration files that you need, and adapt to your need.
-* Disable DNS server provided by dnsmasq. (Disabled by edit /etc/config/dhcp)
-  **WARNING: PORT 53 CAN BE BIND TO ONE AND ONLY ONE DNS SERVICE**
+* Disable DNS server provided by dnsmasq. (Disabled by edit /etc/config/dhcp.)  
+   **WARNING: PORT 53 CAN BE BIND TO ONE AND ONLY ONE DNS SERVICE**
 
 ```config dnsmasq
 	config dnsmasq
@@ -42,7 +42,8 @@ For game console, e.g. PSW, Nintendo Switch Online, you may want to make some ex
 		list dhcp_option '6,192.168.1.1,192.168.1.1'
 ```
 
-* Default user credential for AdGuard Home is root, password. Please change according to [here](https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration), or simply use your credential setting lines in your previous configuration file.
+* Default user credential for AdGuard Home is root, password.  
+  Please change according to [here](https://github.com/AdguardTeam/AdGuardHome/wiki/Configuration), or simply use your credential setting lines in your previous configuration file.
 * Enable AdGuard Home, ChinaDNS-NG, SmartDNS as Startup Services. 
 * Reboot your router.
 
