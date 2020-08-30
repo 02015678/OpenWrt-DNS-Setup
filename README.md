@@ -31,7 +31,7 @@ For game console, e.g. PSW, Nintendo Switch Online, you may want to make some ex
 		option noresolv '0'
 ```
 
-* Some devices (e.g. Nintendo Switch) require at least two DNS server, or it will assert DNS fault. 
+* Some devices (e.g. Nintendo Switch) require at least two DNS server, or it will assert DNS fault.  
   Edit /etc/config/dhcp to declare DHCP broadcast DNS server.
 
 ```config dhcp 'lan'
