@@ -1,0 +1,116 @@
+bind_host: 192.168.2.1
+bind_port: 3000
+users:
+- name: root
+  password: $2y$05$sIF..5sQagPHmB5hpJkiL.BeSQ9spx3Dv54N2efYbkvDiVkSXrGgi
+http_proxy: ""
+language: ""
+rlimit_nofile: 0
+debug_pprof: false
+web_session_ttl: 720
+dns:
+  bind_host: 0.0.0.0
+  port: 53
+  statistics_interval: 1
+  querylog_enabled: true
+  querylog_file_enabled: true
+  querylog_interval: 1
+  querylog_size_memory: 1000
+  anonymize_client_ip: true
+  protection_enabled: true
+  blocking_mode: nxdomain
+  blocking_ipv4: ""
+  blocking_ipv6: ""
+  blocked_response_ttl: 10
+  parental_block_host: family-block.dns.adguard.com
+  safebrowsing_block_host: standard-block.dns.adguard.com
+  ratelimit: 0
+  ratelimit_whitelist: []
+  refuse_any: false
+  upstream_dns:
+  - 127.0.0.1:5335
+  bootstrap_dns:
+  - 119.29.29.29
+  - 223.5.5.5
+  all_servers: false
+  fastest_addr: false
+  allowed_clients: []
+  disallowed_clients: []
+  blocked_hosts: []
+  cache_size: 4194304
+  cache_ttl_min: 0
+  cache_ttl_max: 0
+  bogus_nxdomain: []
+  aaaa_disabled: false
+  enable_dnssec: false
+  edns_client_subnet: true
+  filtering_enabled: true
+  filters_update_interval: 24
+  parental_enabled: false
+  safesearch_enabled: false
+  safebrowsing_enabled: false
+  safebrowsing_cache_size: 1048576
+  safesearch_cache_size: 1048576
+  parental_cache_size: 1048576
+  cache_time: 30
+  rewrites:
+  - domain: www.tsinghua.edu.cn
+    answer: AAAA
+  - domain: www.ustc.edu.cn
+    answer: AAAA
+  blocked_services: []
+tls:
+  enabled: false
+filters:
+- enabled: true
+  url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
+  name: AdGuard Simplified Domain Names filter
+  id: 1
+- enabled: true
+  url: https://adaway.org/hosts.txt
+  name: AdAway
+  id: 2
+- enabled: true
+  url: https://www.malwaredomainlist.com/hostslist/hosts.txt
+  name: MalwareDomainList.com Hosts List
+  id: 4
+- enabled: true
+  url: https://hosts.nfz.moe/full/hosts
+  name: neoHosts full
+  id: 1575618240
+- enabled: false
+  url: https://easylist-downloads.adblockplus.org/easylist.txt
+  name: EasyList
+  id: 1598535466
+- enabled: true
+  url: https://easylist-downloads.adblockplus.org/easylistchina.txt
+  name: EasyList CN
+  id: 1598535467
+- enabled: false
+  url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
+  name: EasyPrivacy
+  id: 1598535468
+- enabled: true
+  url: https://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt
+  name: EasyPrivacy cjxlist
+  id: 1598535469
+whitelist_filters: []
+user_rules: []
+dhcp:
+  enabled: false
+  interface_name: ""
+  gateway_ip: ""
+  subnet_mask: ""
+  range_start: ""
+  range_end: ""
+  lease_duration: 86400
+  icmp_timeout_msec: 1000
+clients: []
+log_compress: false
+log_localtime: false
+log_max_backups: 0
+log_max_size: 100
+log_max_age: 3
+log_file: ""
+verbose: false
+schema_version: 6
