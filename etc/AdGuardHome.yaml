@@ -66,7 +66,7 @@ filters:
   url: https://adguardteam.github.io/AdGuardSDNSFilter/Filters/filter.txt
   name: AdGuard Simplified Domain Names filter
   id: 1
-- enabled: true
+- enabled: false
   url: https://adaway.org/hosts.txt
   name: AdAway
   id: 2
@@ -82,7 +82,7 @@ filters:
   url: https://easylist-downloads.adblockplus.org/easylist.txt
   name: EasyList
   id: 1598535466
-- enabled: true
+- enabled: false
   url: https://easylist-downloads.adblockplus.org/easylistchina.txt
   name: EasyList CN
   id: 1598535467
@@ -90,7 +90,7 @@ filters:
   url: https://easylist-downloads.adblockplus.org/easyprivacy.txt
   name: EasyPrivacy
   id: 1598535468
-- enabled: true
+- enabled: false
   url: https://cdn.jsdelivr.net/gh/cjx82630/cjxlist/cjx-annoyance.txt
   name: EasyPrivacy cjxlist
   id: 1598535469
